@@ -1,0 +1,12 @@
+*.jpg
+*.png
+*.pt
+*.pth
+*.safetensors
+*.zip
+*.tar
+*.tar.gz
+*.ckpt
+*.pkl
+*.npy
+*.dat
