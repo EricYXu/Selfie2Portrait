@@ -381,9 +381,9 @@ def process(task,seed,src_image,tgt_image,clothes,prompt,tryon_cat,edit_cat,ug_s
 
         pwarped_tex_img_np,pwarped_tex_mask= get_pwarped_tex_for_pt(src_image,src_pose,tgt_pose,model.uv_tex_warper) #h,W,4
 
-        # SELF-INSERTED code to save pwarped_tex_img_np variable to a txt file
+        # SELF-INSERTED code to save pwarped_tex_img_np variable to a txt file***
         pwarped_tex_img_np_extract = pwarped_tex_img_np
-        np.save("/home/kate/Unselfie/UniHuman/code/Body_Texture_Array.npy", pwarped_tex_img_np)
+        np.save("/home/kate/Selfie2Portrait/UniHuman/code/Body_Texture_Array.npy", pwarped_tex_img_np)
 
         pwarped_tex_img=tgt_img_trans_to_tensor(Image.fromarray(pwarped_tex_img_np)) 
         pwarped_tex_mask=tgt_trans_to_image(Image.fromarray(pwarped_tex_mask))

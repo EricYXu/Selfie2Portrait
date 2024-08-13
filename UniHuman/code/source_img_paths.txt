@@ -1,1 +1,1 @@
-/home/kate/Unselfie/detectron2/projects/DensePose/Resized_Images/Resized_Image13.png
+/home/kate/Selfie2Portrait/detectron2/projects/DensePose/Resized_Images/Resized_Image154.png

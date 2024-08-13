@@ -104,11 +104,11 @@ for i in range(4):
 
     plt.subplot(421+(2*i))
     plt.imshow(color_patches)
-    plt.savefig("/home/kate/Unselfie/dinov2/code/InputSelfie_DINO/PCA_ColorPatches_Image" + str(image_number) + "_InputSelfie_DINO.png")
+    plt.savefig("/home/kate/Unselfie/dinov2/code/TEST_InputSelfie_DINO/PCA_ColorPatches_Image" + str(image_number) + "_InputSelfie_DINO.png")
 
     plt.subplot(421+(2*i)+1)
     plt.imshow(images[i])
-    plt.savefig("/home/kate/Unselfie/dinov2/code/InputSelfie_DINO/PCA_otherimages_Image" + str(image_number) + "_InputSelfie_DINO.png")
+    plt.savefig("/home/kate/Unselfie/dinov2/code/TEST_InputSelfie_DINO/PCA_otherimages_Image" + str(image_number) + "_InputSelfie_DINO.png")
 
 for i in range(4):
     plt.subplot(425+i)
@@ -153,7 +153,7 @@ plt.subplot(121)
 plt.imshow(test_image)
 plt.subplot(122)
 plt.imshow(only_object.reshape([48, -1, 3]).transpose([1, 0, 2]))
-plt.savefig("/home/kate/Unselfie/dinov2/code/InputSelfie_DINO/PCA_TEST_Image" + str(test_number) + "_InputSelfie_DINO.png")
+plt.savefig("/home/kate/Unselfie/dinov2/code/TEST_InputSelfie_DINO/PCA_TEST_Image" + str(test_number) + "_InputSelfie_DINO.png")
 
 print("Overall process complete!")
 

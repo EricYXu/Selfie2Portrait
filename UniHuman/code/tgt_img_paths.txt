@@ -1,1 +1,1 @@
-/home/kate/Unselfie/UniHuman/code/Target_Images/male_thin_top_target.jpg
+/home/kate/Selfie2Portrait/UniHuman/code/Target_Images/female_wide_top_target.jpg

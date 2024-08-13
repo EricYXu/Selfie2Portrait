@@ -14,7 +14,8 @@ import time
 # Constructing the img_paths array
 img_paths = []
 for i in range(1, 155):
-    img_paths.append("/mnt/volume2/Data/UnselfieData/selfies/image" + str(i) + ".jpg")
+    img_paths.append("/mnt/volume2/Data/UnselfieData/selfies/image" + str(i) + ".jpg") # INPUT SELFIES
+    
 
 # Parameters
 num_patches = 36
@@ -39,7 +40,7 @@ for i in range(num_imgs):
 
 with torch.no_grad():
   features_dict = dinov2.forward_features(imgs_tensor)
-  features = features_dict['x_norm_patchtokens']
+  features = features_dict['x_norm_patchtokens'] # TODO: 1. Look at other keys in the features_dict to see if other methods are better at extracting features
 
 # Visualize features using PCA
 features = features.reshape(num_imgs * num_patches * num_patches, feat_dim)
@@ -54,10 +55,9 @@ pca_features = pca_features.reshape(num_imgs, num_patches, num_patches, 3)
 # Saving the outputs
 for i in range(num_imgs):
   plt.imshow(pca_features[i].astype(np.uint8))
-  plt.savefig('/home/kate/Unselfie/dinov2/code/InputSelfie_DINO_Results/PCA_Image' + str(i + 1) + '.jpg')
+  plt.savefig('/home/kate/Selfie2Portrait/dinov2/code/pca_results_for_input_selfies/image' + str(i + 1) + '.jpg')
 
 # Displaying the Matplots in a more convenient way
 ## TODO
-
 
 print("Process complete!")
